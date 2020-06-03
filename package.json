@@ -1,0 +1,13 @@
+{
+  "name": "rollup-src-maps-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn rollup --config rollup.config.js"
+  },
+  "devDependencies": {
+    "rollup": "^2.12.1",
+    "@rollup/plugin-sucrase": "^3.0.2"
+  }
+}
