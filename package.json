@@ -4,10 +4,23 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "yarn rollup --config rollup.config.js"
+    "build": "yarn rollup --config rollup.config.js",
+    "verify-source-map": "node scripts/check-source-map.js"
+  },
+  "dependencies": {
+    "react": "^16.13.1"
   },
   "devDependencies": {
+    "@rollup/plugin-sucrase": "^3.0.2",
+    "@rollup/plugin-virtual": "^2.0.2",
+    "@rollup/pluginutils": "^3.0.10",
+    "fs-extra": "^9.0.0",
+    "lines-and-columns": "1.1.6",
+    "minimist": "^1.2.5",
+    "recast": "^0.19.1",
     "rollup": "^2.12.1",
-    "@rollup/plugin-sucrase": "^3.0.2"
+    "rollup-plugin-terser": "^6.1.0",
+    "serve": "^11.3.1",
+    "source-map": "^0.7.3"
   }
 }
